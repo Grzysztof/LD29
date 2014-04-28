@@ -66,7 +66,7 @@ var player = {
 			map = generateMap();//if on doors
 			currentMap++;
 		}else if(map[player_y+y][player_x+x]===6){
-			player.air += 30;//if on air
+			player.air = 100;//if on air
 			map[player_y+y][player_x+x]=0;
 		}else if(map[player_y+y][player_x+x]===7){//gold
 			score+=100;
